@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .mainDiv {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 8%;
+        }
+
+        .btnContainer {
+            margin-top: 20px;
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+        }
+
+        #container {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            display: flex;
+            background-color: pink;
+        }
+
+        .triangle {
+            border-style: solid;
+            border-width: 0 35px 60px 35px;
+            border-color: transparent transparent rgb(235, 69, 213) transparent;
+            margin: auto;
+        }
+
+        .circle {
+            border-radius: 50%;
+            background-color: red;
+            height: 70px;
+            width: 70px;
+            margin: auto;
+        }
+
+        .rectangle {
+            margin: auto;
+            width: 75%;
+            background-color: rgb(126, 63, 243);
+            height: 70px;
+            border-radius: 10px;
+        }
+
+        .square {
+            margin: auto;
+            width: 70px;
+            background-color: skyblue;
+            height: 70px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            border: none;
+            border-radius: 10px;
+            width: 150px;
+            cursor: pointer;
+            background-color: lightgray;
+        }
+
+        .userManual {
+            text-align: center;
+            font-weight: 400;
+            line-height: 0.5;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+
+        span {
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="userManual">
+        <h2>User Manual</h2>
+        <p>Change Color button change the outer Circle color</p>
+        <p>Change Shape button change the internal shape</p>
+        <p><span>+</span> Size button increase the size of the outer Circle</p>
+        <p><span>-</span> Size button reduce the size of the outer Circle</p>
+    </div>
+
+    <div class="mainDiv">
+        <div id="container">
+            <div id="insideContainer" class="triangle"></div>
+        </div>
+
+        <div class="btnContainer">
+            <button id="changeColor">change Color</button>
+
+            <button id="changeShape">change Shape</button>
+
+            <button id="gainSize">+ Size</button>
+
+            <button id="shrinkSize">- Size</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
